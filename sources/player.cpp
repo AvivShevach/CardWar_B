@@ -19,9 +19,9 @@ Player::Player(string n) {
     n_left = 0;
 }
 
-void Player::get_cards( vector<Card *> c, int start, int end)
+void Player::get_cards( vector<Card *> card, int start, int end)
 {
-    std::vector<Card *> help_cards(c.begin()+start, c.begin()+end);
+    std::vector<Card *> help_cards(card.begin()+start, card.begin()+end);
     p_cards = help_cards;
     for (auto& element : p_cards)
     {

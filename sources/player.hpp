@@ -14,16 +14,10 @@ class Player {
   int n_win;
   unsigned int n_left;
   vector<Card *> p_cards;
-//  vector<Card *> pwon_cards;
-
-  
-//   Card hand[52];
-//   int stack;
-
   Player();
   Player(string n);
   int stacksize();
   int cardesTaken();
-  void get_cards( vector<Card *> c, int start, int end);
+  void get_cards( vector<Card *> card, int start, int end);
 };
  #endif

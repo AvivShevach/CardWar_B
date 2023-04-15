@@ -2,21 +2,20 @@
 #ifndef CARD_INCLUDED
 #define CARD_INCLUDED
 #include <string>
+#include <vector>
 #include <iostream>
 #include <fstream>
 
 using namespace std;
-const string CardName[] = {
+const vector<string> CardName = {
     "", "Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King" 
 };
 
 class Card {
  public:
-  int value;
+  unsigned int value;
   string suit;
-public:
-  Card( int, string);
-  ~Card();
+  Card( unsigned int, string);
 };
 
 #endif
